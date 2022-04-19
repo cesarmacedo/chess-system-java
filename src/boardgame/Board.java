@@ -36,4 +36,9 @@ public class Board {
 		return pieces[position.getRow()][position.getCollumn()];
 	}
 	
+	public void placePierce(Piece piece, Position position) {
+		pieces[position.getRow()][position.getCollumn()] = piece;
+		piece.position = position;
+	}
+	
 }
